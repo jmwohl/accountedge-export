@@ -1,11 +1,13 @@
-(*This script exports all Accounts, Activities, Items, Jobs, Purchases, Sales, and Journal entries.
+(*  Exports all Accounts, Activities, Items, Jobs, Purchases, Sales, and Journal
+    entries.
+
 	Written against AccountEdge Pro 2012 Build 16.1
  *)
 
 set export_location to POSIX file "/Users/matt/Desktop/AE/Exports/"
 set datafilename to choose file with prompt "Select your datafile"
 
-set app_fullpath to POSIX file "/Users/matt/Desktop/AE/AccountEdge Pro.app" as string
+set app_fullpath to POSIX file "/Applications/AccountEdge Pro 2012/AccountEdge Pro.app" as string
 set app_name to application app_fullpath
 
 set date_set_from to "1/1/1985"
